@@ -38,7 +38,7 @@
             <div class="nav-container">
                 <!-- Logo -->
                 <div class="nav-brand">
-                    <img src="brand.png" alt="Aaryuvedam" class="brand-logo">
+                    <img src="../assets/brand.png" alt="Aaryuvedam" class="brand-logo">
                 </div>
 
                 <!-- Main Navigation -->
@@ -245,7 +245,7 @@
             <div class="doctor-grid">
                 <div class="doctor-image">
                     <div class="image-wrapper">
-                        <img src="DR-CHETAN.png" alt="Dr. Chetan Sharma">
+                        <img src="../assets/DR-CHETAN.png" alt="Dr. Chetan Sharma">
                         <div class="image-pattern"></div>
                     </div>
                 </div>
@@ -293,7 +293,7 @@
             <div class="doctor-grid doctor-grid-reverse">
                 <div class="doctor-image">
                     <div class="image-wrapper">
-                        <img src="DR-ANU.png" alt="Dr. Anu Sharma">
+                        <img src="../assets/DR-ANU.png" alt="Dr. Anu Sharma">
                         <div class="image-pattern"></div>
                     </div>
                 </div>
@@ -439,7 +439,7 @@
     <div class="mobile-sidebar" id="mobileMenuContainer">
         <div class="mobile-sidebar-header">
             <div class="mobile-user-profile">
-                <img src="brand.png" alt="Aaryuvedam" class="mobile-profile-logo">
+                <img src="../assets/brand.png" alt="Aaryuvedam" class="mobile-profile-logo">
                 <div class="mobile-user-info">
                     <h4>Aaryuvedam</h4>
                     <p>Ancient Healing</p>
@@ -539,6 +539,84 @@
                     <i class="bi bi-telephone"></i>
                 </a>
             </div>
+        </div>
+    </div>
+
+    <!-- Healing Journey Popup Modal -->
+    <div class="healing-popup-overlay" id="healingPopupOverlay">
+        <div class="healing-popup-modal">
+            <button class="healing-popup-close" id="healingPopupClose" aria-label="Close popup">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <div class="healing-popup-header">
+                <div class="healing-popup-icon">🌿</div>
+                <h2>Begin Your Healing Journey with Us 🌿</h2>
+                <p class="healing-popup-intro">Your health concerns deserve personal care, understanding, and the wisdom
+                    of authentic Ayurveda. By filling out this form, you are taking the first step toward a balanced,
+                    healthy, and normal life.</p>
+            </div>
+
+            <form class="healing-popup-form" id="healingPopupForm">
+                <div class="healing-form-group">
+                    <label for="healingName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="healingName" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="healing-form-row">
+                    <div class="healing-form-group">
+                        <label for="healingAge">Age <span class="required">*</span></label>
+                        <input type="number" id="healingAge" name="age" placeholder="Your age" min="1" max="120"
+                            required>
+                    </div>
+
+                    <div class="healing-form-group">
+                        <label for="healingSex">Sex <span class="required">*</span></label>
+                        <select id="healingSex" name="sex" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="healing-form-group">
+                    <label for="healingProblem">Health Concern / Problem <span class="required">*</span></label>
+                    <textarea id="healingProblem" name="problem"
+                        placeholder="Describe your health concern or problem..." rows="3" required></textarea>
+                </div>
+
+                <div class="healing-form-group">
+                    <label for="healingSeverity">Severity of Problem <span class="required">*</span></label>
+                    <div class="severity-options">
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="mild" required>
+                            <span class="severity-label mild">Mild</span>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="moderate">
+                            <span class="severity-label moderate">Moderate</span>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="severe">
+                            <span class="severity-label severe">Severe</span>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="chronic">
+                            <span class="severity-label chronic">Chronic</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="healing-submit-btn">
+                    <span>Start My Healing Journey</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </form>
+
+            <p class="healing-popup-footer">🔒 Your information is safe and will only be used to provide personalized
+                care.</p>
         </div>
     </div>
 
