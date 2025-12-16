@@ -536,6 +536,91 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ==========================================
+    // USP CAROUSEL SLIDER
+    // ==========================================
+    const uspSlides = document.querySelectorAll('.usp-slide');
+    const uspDots = document.querySelectorAll('.usp-dot');
+    const uspPrevBtn = document.getElementById('uspPrev');
+    const uspNextBtn = document.getElementById('uspNext');
+
+    let currentUspSlide = 0;
+    let uspSlideInterval;
+
+    function goToUspSlide(n) {
+        if (uspSlides.length === 0) return;
+
+        // Remove active from current slide
+        uspSlides[currentUspSlide].classList.remove('active');
+        uspSlides[currentUspSlide].classList.add('prev');
+        if (uspDots[currentUspSlide]) uspDots[currentUspSlide].classList.remove('active');
+
+        // Calculate new slide
+        currentUspSlide = (n + uspSlides.length) % uspSlides.length;
+
+        // Remove prev class from all slides
+        setTimeout(() => {
+            uspSlides.forEach(slide => slide.classList.remove('prev'));
+        }, 800);
+
+        // Add active to new slide
+        uspSlides[currentUspSlide].classList.add('active');
+        if (uspDots[currentUspSlide]) uspDots[currentUspSlide].classList.add('active');
+    }
+
+    function nextUspSlide() {
+        goToUspSlide(currentUspSlide + 1);
+    }
+
+    function prevUspSlide() {
+        goToUspSlide(currentUspSlide - 1);
+    }
+
+    // Click handlers for arrows
+    if (uspNextBtn) uspNextBtn.addEventListener('click', () => {
+        nextUspSlide();
+        resetUspSliderInterval();
+    });
+
+    if (uspPrevBtn) uspPrevBtn.addEventListener('click', () => {
+        prevUspSlide();
+        resetUspSliderInterval();
+    });
+
+    // Click handlers for dots
+    uspDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToUspSlide(index);
+            resetUspSliderInterval();
+        });
+    });
+
+    // Auto-play USP slider
+    function startUspSlider() {
+        uspSlideInterval = setInterval(nextUspSlide, 3000);
+    }
+
+    function stopUspSlider() {
+        clearInterval(uspSlideInterval);
+    }
+
+    function resetUspSliderInterval() {
+        stopUspSlider();
+        startUspSlider();
+    }
+
+    // Only start USP slider if slides exist
+    if (uspSlides.length > 0) {
+        startUspSlider();
+    }
+
+    // Pause on hover
+    const uspCarouselSection = document.querySelector('.usp-carousel-section');
+    if (uspCarouselSection) {
+        uspCarouselSection.addEventListener('mouseenter', stopUspSlider);
+        uspCarouselSection.addEventListener('mouseleave', startUspSlider);
+    }
+
+    // ==========================================
     // SCROLL TO TOP BUTTON
     // ==========================================
     const scrollTopBtn = document.getElementById('scrollTop');
