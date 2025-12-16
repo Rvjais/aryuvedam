@@ -1,0 +1,390 @@
+/* ==========================================
+   DOCTORS PAGE - CLEAN & ATTRACTIVE DESIGN
+   ========================================== */
+
+/* Simple, Clean Typography */
+:root {
+    --font-display: 'Playfair Display', serif;
+    --font-body-clean: 'Poppins', sans-serif;
+}
+
+/* Clean Header */
+.page-header {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%) !important;
+    padding: 8rem 0 5rem !important;
+    position: relative;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(242, 196, 100, 0.1) 0%, transparent 50%);
+}
+
+.page-header::after {
+    display: none !important;
+}
+
+/* Simple Title */
+.page-title {
+    font-family: var(--font-display) !important;
+    font-size: clamp(2.5rem, 5vw, 4rem) !important;
+    font-weight: 700 !important;
+    color: white !important;
+    margin-bottom: 1.5rem !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.2 !important;
+    text-transform: none !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: white !important;
+    filter: none !important;
+}
+
+.page-title::after {
+    display: none !important;
+}
+
+.page-subtitle {
+    font-family: var(--font-body-clean) !important;
+    font-size: clamp(1.1rem, 2vw, 1.4rem) !important;
+    color: rgba(242, 196, 100, 0.95) !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: normal !important;
+    line-height: 1.6 !important;
+}
+
+/* Clean Introduction */
+.doctors-intro {
+    padding: 5rem 0 !important;
+    background: white !important;
+}
+
+.intro-content {
+    background: linear-gradient(135deg, #f9f9f9 0%, white 100%) !important;
+    backdrop-filter: none !important;
+    padding: 3rem 4rem !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid #e8e8e8 !important;
+}
+
+.intro-content::before,
+.intro-content::after {
+    display: none !important;
+}
+
+.intro-text {
+    font-family: var(--font-body-clean) !important;
+    font-size: 1.2rem !important;
+    color: #333 !important;
+    line-height: 1.8 !important;
+    margin-bottom: 1.5rem !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+
+.intro-text:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Doctor Profile Sections */
+.doctor-profile {
+    padding: 5rem 0 !important;
+    background: #fafafa !important;
+}
+
+.doctor-profile-alt {
+    background: white !important;
+}
+
+.doctor-profile::before {
+    display: none !important;
+}
+
+.doctor-grid {
+    gap: 4rem !important;
+}
+
+/* Circular Image Design - Like Reference */
+.doctor-image {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.doctor-image::before,
+.doctor-image::after {
+    display: none !important;
+}
+
+.image-wrapper {
+    position: relative !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    padding-bottom: 100% !important;
+    background: white !important;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.15),
+        0 0 0 8px white,
+        0 0 0 16px #7CAF3C !important;
+}
+
+.image-wrapper::before {
+    display: none !important;
+}
+
+.image-wrapper img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    filter: none !important;
+    transition: transform 0.4s ease !important;
+}
+
+.doctor-profile:hover .image-wrapper {
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.2),
+        0 0 0 8px white,
+        0 0 0 16px #6a9c32 !important;
+    transform: none !important;
+}
+
+.doctor-profile:hover .image-wrapper img {
+    transform: scale(1.05) !important;
+}
+
+/* Hide decorative pattern */
+.image-pattern {
+    display: none !important;
+}
+
+/* Clean Doctor Info */
+.doctor-info {
+    padding: 2rem 0 !important;
+}
+
+.doctor-info::before {
+    display: none !important;
+}
+
+/* Simple Designation Badge */
+.doctor-designation {
+    display: inline-block !important;
+    background: #1a4d2e !important;
+    color: #f2c464 !important;
+    padding: 0.7rem 1.8rem !important;
+    border-radius: 50px !important;
+    font-family: var(--font-body-clean) !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    margin-bottom: 1.5rem !important;
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.3) !important;
+    border: none !important;
+    animation: none !important;
+}
+
+.doctor-designation::before,
+.doctor-designation::after {
+    display: none !important;
+}
+
+/* Clean Doctor Name */
+.doctor-name {
+    font-family: var(--font-display) !important;
+    font-size: clamp(2.5rem, 4vw, 3.5rem) !important;
+    font-weight: 700 !important;
+    color: #1a4d2e !important;
+    margin-bottom: 2rem !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em !important;
+    text-transform: none !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #1a4d2e !important;
+}
+
+.doctor-name::before {
+    display: none !important;
+}
+
+/* Simple Experience Badge */
+.doctor-experience {
+    display: inline-flex !important;
+    background: #f0f7ec !important;
+    padding: 1rem 2rem !important;
+    border-radius: 12px !important;
+    border-left: 4px solid #7CAF3C !important;
+    margin-bottom: 2.5rem !important;
+    box-shadow: 0 4px 15px rgba(124, 175, 60, 0.1) !important;
+}
+
+.doctor-experience:hover {
+    transform: none !important;
+    background: #e8f3df !important;
+}
+
+.doctor-experience i {
+    font-size: 1.8rem !important;
+    color: #7CAF3C !important;
+    filter: none !important;
+}
+
+.doctor-experience span {
+    font-family: var(--font-body-clean) !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #1a4d2e !important;
+    letter-spacing: normal !important;
+}
+
+/* Clean Description */
+.doctor-description {
+    margin-bottom: 3rem !important;
+}
+
+.doctor-description::before {
+    display: none !important;
+}
+
+.doctor-description p {
+    font-family: var(--font-body-clean) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.9 !important;
+    color: #444 !important;
+    margin-bottom: 1.5rem !important;
+    text-align: left !important;
+    padding-left: 0 !important;
+    border-left: none !important;
+    font-weight: 400 !important;
+}
+
+.doctor-description p:hover {
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+
+.doctor-description p:first-of-type::first-letter {
+    font-family: var(--font-display) !important;
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    color: #7CAF3C !important;
+    float: left !important;
+    line-height: 0.9 !important;
+    margin: 0.1em 0.15em 0 0 !important;
+    text-shadow: none !important;
+}
+
+/* Clean CTA */
+.doctor-cta {
+    background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 100%) !important;
+    padding: 5rem 0 !important;
+}
+
+.doctor-cta::before {
+    display: none !important;
+}
+
+.cta-content h3 {
+    font-family: var(--font-display) !important;
+    font-size: clamp(2.5rem, 4vw, 3.5rem) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    text-transform: none !important;
+    color: white !important;
+    margin-bottom: 1.5rem !important;
+    text-shadow: none !important;
+}
+
+.cta-content p {
+    font-family: var(--font-body-clean) !important;
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    color: rgba(242, 196, 100, 0.95) !important;
+}
+
+/* Simple Clean Buttons */
+.btn {
+    font-family: var(--font-body-clean) !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    padding: 1.2rem 3rem !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    border-radius: 50px !important;
+}
+
+.btn::before {
+    display: none !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #d4af37 0%, #f2c464 100%) !important;
+    color: #1a4d2e !important;
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4) !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.5) !important;
+}
+
+.btn-primary::after {
+    display: none !important;
+}
+
+.btn-outline {
+    background: transparent !important;
+    color: white !important;
+    border: 2px solid white !important;
+    box-shadow: none !important;
+}
+
+.btn-outline:hover {
+    background: white !important;
+    color: #1a4d2e !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .doctor-image {
+        max-width: 350px;
+    }
+
+    .intro-content {
+        padding: 2.5rem 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 6rem 0 4rem !important;
+    }
+
+    .doctor-image {
+        max-width: 300px;
+    }
+
+    .intro-content {
+        padding: 2rem 1.5rem !important;
+    }
+
+    .doctor-description p {
+        text-align: justify !important;
+    }
+}

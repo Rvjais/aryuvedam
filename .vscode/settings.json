@@ -1,0 +1,12 @@
+{
+    "liveServer.settings.ignoreFiles": [
+        "**/*.crdownload",
+        "**/*.tmp",
+        "**/.DS_Store",
+        "**/Unconfirmed*"
+    ],
+    "files.watcherExclude": {
+        "**/*.crdownload": true,
+        "**/Unconfirmed*": true
+    }
+}

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aaryuvedam Gallery - Explore our collection of photos, videos, and reels showcasing Ayurvedic treatments and facilities">
+    <title>Gallery | Aaryuvedam - Photos, Videos & Reels</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <p class="banner-text">✨ AYURVEDA | THE PREVENTION SCIENCE ✨</p>
+        </div>
+    </div>
+
+    <!-- Navigation (same as index.html) -->
+    <nav class="modern-navbar">
+        <div class="nav-wrapper">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-brand">
+                    <img src="brand.png" alt="Aaryuvedam" class="brand-logo">
+                </div>
+
+                <!-- Main Navigation -->
+                <ul class="main-nav" id="mainNav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mega-menu-item">
+                        <a href="javascript:;" class="nav-link">Treatment</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-column">
+                                    <h4>Disorder</h4>
+                                    <a href="allergy-treatment.html">Allergy Treatment</a>
+                                    <a href="joint-pain.html">Bone and Joint Pain</a>
+                                    <a href="diseases.html">All Diseases</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link active">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- Right Icons -->
+                <div class="nav-actions">
+                    <button class="nav-icon search-icon" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <a href="#appointment" class="nav-icon" aria-label="Appointments">
+                        <i class="bi bi-calendar-check"></i>
+                    </a>
+                    <a href="#contact" class="book-now-btn">Book Now</a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <div class="gallery-header-content">
+                <span class="section-tag">Explore Our Gallery</span>
+                <h1 class="gallery-title">Photos, Videos & Reels</h1>
+                <p class="gallery-subtitle">Discover the essence of Ayurvedic healing through our visual journey</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Tabs -->
+    <section class="gallery-tabs-section">
+        <div class="container">
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-tab="photos">
+                    <i class="bi bi-images"></i>
+                    <span>Photos</span>
+                </button>
+                <button class="gallery-tab" data-tab="videos">
+                    <i class="bi bi-play-circle"></i>
+                    <span>Videos</span>
+                </button>
+                <button class="gallery-tab" data-tab="reels">
+                    <i class="bi bi-camera-reels"></i>
+                    <span>Reels</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photos Gallery -->
+    <section class="gallery-content" id="photos-content">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+                <button class="filter-btn" data-filter="treatments">Treatments</button>
+                <button class="filter-btn" data-filter="herbs">Herbs</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="gallery-grid">
+                <!-- Photo items will be added here -->
+                <!-- WhatsApp Photo -->
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-image">
+                        <img src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Image 2025-12-12 at 11.30.42 PM.jpeg"
+                            alt="Ayurveda Facility">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Our Facility</h3>
+                                <p>Modern Ayurvedic treatment center</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(0)">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=800&fit=crop"
+                            alt="Ayurveda Center">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Treatment Center</h3>
+                                <p>State-of-the-art Ayurvedic facility</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(0)">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="treatments">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=600&fit=crop"
+                            alt="Ayurvedic Treatment">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Panchakarma Therapy</h3>
+                                <p>Traditional healing process</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(1)">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="herbs">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=800&fit=crop"
+                            alt="Ayurvedic Herbs">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Natural Herbs</h3>
+                                <p>Organic medicinal plants</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(2)">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=600&fit=crop"
+                            alt="Meditation Room">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Meditation Space</h3>
+                                <p>Peaceful healing environment</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(3)">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="treatments">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=800&fit=crop"
+                            alt="Massage Therapy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Abhyanga Massage</h3>
+                                <p>Full body rejuvenation</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(4)">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=600&fit=crop"
+                            alt="Yoga Session">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Yoga Workshop</h3>
+                                <p>Community wellness event</p>
+                            </div>
+                            <button class="gallery-expand" onclick="openLightbox(5)">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Gallery -->
+    <section class="gallery-content" id="videos-content" style="display: none;">
+        <div class="container">
+            <div class="videos-grid">
+                <!-- Video items -->
+                <!-- WhatsApp Videos -->
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.26 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.26 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Ayurvedic Treatment Session 1</h3>
+                        <p>Experience traditional healing methods</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.49 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.49 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Ayurvedic Treatment Session 2</h3>
+                        <p>Holistic wellness approach</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.52 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.52 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Panchakarma Therapy Demo</h3>
+                        <p>Ancient cleansing techniques</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.53 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.53 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Herbal Medicine Preparation</h3>
+                        <p>Natural remedies crafted with care</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.55 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.29.55 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Therapeutic Massage Techniques</h3>
+                        <p>Abhyanga and rejuvenation therapy</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.02 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.02 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Yoga & Meditation Session</h3>
+                        <p>Mind-body wellness practice</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.04 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.04 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Facility Tour</h3>
+                        <p>Explore our modern Ayurvedic center</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.06 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.06 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Shirodhara Treatment</h3>
+                        <p>Traditional oil therapy for relaxation</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.09 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.09 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Cupping Therapy Session</h3>
+                        <p>Ancient healing practice</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.13 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.13 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Naadi Pariksha Diagnosis</h3>
+                        <p>Pulse reading for health assessment</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.18 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.18 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Leech Therapy Treatment</h3>
+                        <p>Traditional bloodletting therapy</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.21 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.21 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Diet Consultation</h3>
+                        <p>Personalized Ayurvedic nutrition guidance</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.25 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.25 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Ksharsutra Treatment</h3>
+                        <p>Specialized therapy for anorectal disorders</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.31 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.31 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Agnikarma Therapy</h3>
+                        <p>Thermal cautery treatment</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.39 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.39 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Patient Success Story</h3>
+                        <p>Real results from our treatments</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <video style="width: 100%; height: 100%; object-fit: cover;" muted>
+                            <source
+                                src="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.41 PM.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="video-play-btn"
+                            data-video="WhatsApp Unknown 2025-12-13 at 9.32.40 PM/WhatsApp Video 2025-12-12 at 11.30.41 PM.mp4">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Complete Wellness Program</h3>
+                        <p>Comprehensive Ayurvedic care journey</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&h=600&fit=crop"
+                            alt="Video Thumbnail">
+                        <div class="video-play-btn">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                        <div class="video-duration">5:24</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Introduction to Panchakarma</h3>
+                        <p>Learn about the five cleansing therapies</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop"
+                            alt="Video Thumbnail">
+                        <div class="video-play-btn">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                        <div class="video-duration">8:15</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Yoga for Wellness</h3>
+                        <p>Daily yoga practices for health</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop"
+                            alt="Video Thumbnail">
+                        <div class="video-play-btn">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                        <div class="video-duration">6:42</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Ayurvedic Diet Guide</h3>
+                        <p>Nutrition for your dosha type</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reels Gallery -->
+    <section class="gallery-content" id="reels-content" style="display: none;">
+        <div class="container">
+            <div class="reels-grid">
+                <!-- Reel items -->
+                <div class="reel-item">
+                    <div class="reel-video">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400&h=700&fit=crop"
+                            alt="Reel">
+                        <div class="reel-play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                        <div class="reel-duration">0:30</div>
+                    </div>
+                    <div class="reel-title">
+                        <h4>Daily Wellness Routine</h4>
+                    </div>
+                </div>
+
+                <div class="reel-item">
+                    <div class="reel-video">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=700&fit=crop"
+                            alt="Reel">
+                        <div class="reel-play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                        <div class="reel-duration">0:25</div>
+                    </div>
+                    <div class="reel-title">
+                        <h4>Herb Garden Tour</h4>
+                    </div>
+                </div>
+
+                <div class="reel-item">
+                    <div class="reel-video">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&h=700&fit=crop"
+                            alt="Reel">
+                        <div class="reel-play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                        <div class="reel-duration">0:45</div>
+                    </div>
+                    <div class="reel-title">
+                        <h4>Quick Massage Tips</h4>
+                    </div>
+                </div>
+
+                <div class="reel-item">
+                    <div class="reel-video">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=700&fit=crop"
+                            alt="Reel">
+                        <div class="reel-play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                        <div class="reel-duration">0:35</div>
+                    </div>
+                    <div class="reel-title">
+                        <h4>Morning Yoga Flow</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <button class="lightbox-prev" onclick="changeImage(-1)">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" onclick="changeImage(1)">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Aaryuvedam</h3>
+                    <p>Committed to providing world-class Panchakarma treatments and care to our patients.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Aaryuvedam" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/@AaryuvedamHospital" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/aaryuvedam/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Copyright Aaryuvedam, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-sidebar" id="mobileMenuContainer">
+        <div class="mobile-sidebar-header">
+            <div class="mobile-user-profile">
+                <img src="brand.png" alt="Aaryuvedam" class="mobile-profile-logo">
+                <div class="mobile-user-info">
+                    <h4>Aaryuvedam</h4>
+                    <p>Ancient Healing</p>
+                </div>
+            </div>
+            <button class="mobile-sidebar-close" id="mobileMenuClose" aria-label="Close Menu">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+        <nav class="mobile-sidebar-nav" id="mobileMenuContent">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">
+                        <i class="bi bi-house-door"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="gallery.html" class="mobile-nav-link">
+                        <i class="bi bi-images"></i>
+                        <span>Gallery</span>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="contact-us.html" class="mobile-nav-link">
+                        <i class="bi bi-envelope"></i>
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-sidebar-footer">
+            <a href="#appointment" class="mobile-cta-btn">
+                <i class="bi bi-calendar-plus"></i>
+                <span>Book Appointment</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Healing Journey Popup Modal -->
+    <div class="healing-popup-overlay" id="healingPopupOverlay">
+        <div class="healing-popup-modal">
+            <button class="healing-popup-close" id="healingPopupClose" aria-label="Close popup">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <div class="healing-popup-header">
+                <div class="healing-popup-icon">🌿</div>
+                <h2>Begin Your Healing Journey with Us 🌿</h2>
+                <p class="healing-popup-intro">Your health concerns deserve personal care, understanding, and the wisdom
+                    of authentic Ayurveda. By filling out this form, you are taking the first step toward a balanced,
+                    healthy, and normal life.</p>
+            </div>
+
+            <form class="healing-popup-form" id="healingPopupForm">
+                <div class="healing-form-group">
+                    <label for="healingName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="healingName" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="healing-form-row">
+                    <div class="healing-form-group">
+                        <label for="healingAge">Age <span class="required">*</span></label>
+                        <input type="number" id="healingAge" name="age" placeholder="Your age" min="1" max="120"
+                            required>
+                    </div>
+
+                    <div class="healing-form-group">
+                        <label for="healingSex">Sex <span class="required">*</span></label>
+                        <select id="healingSex" name="sex" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="healing-form-group">
+                    <label for="healingProblem">Health Concern / Problem <span class="required">*</span></label>
+                    <textarea id="healingProblem" name="problem"
+                        placeholder="Describe your health concern or problem..." rows="3" required></textarea>
+                </div>
+
+                <div class="healing-form-group">
+                    <label for="healingSeverity">Severity of Problem <span class="required">*</span></label>
+                    <div class="severity-options">
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="mild" required>
+                            <span class="severity-label mild">Mild</span>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="moderate">
+                            <span class="severity-label moderate">Moderate</span>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="severe">
+                            <span class="severity-label severe">Severe</span>
+                        </label>
+                        <label class="severity-option">
+                            <input type="radio" name="severity" value="chronic">
+                            <span class="severity-label chronic">Chronic</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="healing-submit-btn">
+                    <span>Start My Healing Journey</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </form>
+
+            <p class="healing-popup-footer">🔒 Your information is safe and will only be used to provide personalized
+                care.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+
+</html>
