@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ayurveda Cooking - Learn the principles of Ayurvedic cooking, including the six tastes, dosha-specific foods, and mindful preparation techniques.">
+    <title>Ayurveda Cooking - Principles & Guidelines | Aaryuvedam</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="treatment-page.css">
+</head>
+
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <p class="banner-text">✨ AYURVEDA | THE PREVENTION SCIENCE ✨</p>
+        </div>
+    </div>
+
+    <!-- Modern Mega Menu Navigation -->
+    <nav class="modern-navbar">
+        <div class="nav-wrapper">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-brand">
+                    <a href="../index.html">
+                        <img src="../assets/brand.png" alt="Aaryuvedam" class="brand-logo">
+                    </a>
+                </div>
+
+                <!-- Main Navigation -->
+                <ul class="main-nav" id="mainNav">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item mega-menu-item">
+                        <a href="javascript:;" class="nav-link">Treatment</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-column">
+                                    <h4>Disorder</h4>
+                                    <a href="allergy-treatment.html">Allergy Treatment</a>
+                                    <a href="joint-pain.html">Bone and Joint Pain</a>
+                                    <a href="cardiology.html">Cardiac Disorder</a>
+                                    <a href="gastro.html">Gastrointestinal</a>
+                                    <a href="gynae-treatment.html">Gynaecology</a>
+                                    <a href="diseases.html">All Diseases</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Tri Dosha</h4>
+                                    <a href="vaat.html">Vaat</a>
+                                    <a href="pitta.html">Pitta</a>
+                                    <a href="kapha.html">Kapha</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Weight Loss Program</h4>
+                                    <a href="weight-loss-treatment.html">Weight Loss</a>
+                                    <a href="anti-ageing-treatment.html">Anti Ageing</a>
+                                    <a href="stress-buster.html">Stress Busters</a>
+                                    <a href="detoxification.html">Detoxification</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Ayurveda Diet</h4>
+                                    <a href="vaat-diet.html">Vaat Diet</a>
+                                    <a href="pitta-diet.html">Pitta Diet</a>
+                                    <a href="kapha-diet.html">Kapha Diet</a>
+                                    <a href="ayurveda-cooking.html">Ayurveda Cooking</a>
+                                </div>
+
+                                <div class="mega-column highlight-column">
+                                    <h4>Welcome to Aayurvedam</h4>
+                                    <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 1rem;">We are committed to
+                                        providing world-class Panchakarma treatments and care</p>
+                                    <a href="javascript:void(0)" class="highlight-link">Learn More →</a>
+                                </div>
+                            </div>
+                            <div class="mega-menu-footer">
+                                <a href="diseases.html">All Treatments</a>
+                                <a href="#contact">Book Consultation</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mega-menu-item">
+                        <a href="javascript:;" class="nav-link">Our Services</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-column">
+                                    <h4>Therapies</h4>
+                                    <a href="agnikarma-vidd-karma.html">Agnikarma & Viddh Karma</a>
+                                    <a href="cupping-therapy.html">Cupping Therapy</a>
+                                    <a href="kshar-sutra.html">Kshar Sutra</a>
+                                    <a href="leech-therapy.html">Leech Therapy</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Specialized Services</h4>
+                                    <a href="naadi-pariksha.html">Naadi Pariksha</a>
+                                    <a href="panchakarma.html">Panchakarma</a>
+                                    <a href="swarn-prashan-sanskaar.html">Swarn Prashan Sanskaar</a>
+                                    <a href="uttar-basti.html">Uttar Basti</a>
+                                </div>
+
+                                <div class="mega-column highlight-column">
+                                    <h4>Quick Links</h4>
+                                    <a href="#appointment" class="highlight-link">Book Appointment</a>
+                                    <a href="#contact" class="highlight-link">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mega-menu-item">
+                        <a href="Our-Doctors.html" class="nav-link">Our Doctors</a>
+                    </li>
+
+                    <li class="nav-item mega-menu-item">
+                        <a href="javascript:;" class="nav-link">More Pages</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-column">
+                                    <h4>About</h4>
+                                    <a href="about.html">About Us</a>
+                                    <a href="ayurveda.html">Ayurveda</a>
+                                    <a href="vastu.html">Vastu Shastra</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Resources</h4>
+                                    <a href="gallery.html">Gallery</a>
+                                    <a href="testimonial.html">Testimonials</a>
+                                    <a href="../blog">Blog</a>
+                                </div>
+
+                                <div class="mega-column">
+                                    <h4>Services</h4>
+                                    <a href="health-insurance.html">Health Insurance</a>
+                                    <a href="medical-tourism-india.html">Medical Tourism</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mega-menu-item">
+                        <a href="javascript:;" class="nav-link">Contact Us</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-column">
+                                    <h4>Get In Touch</h4>
+                                    <a href="contact-us.html">Visit Us</a>
+                                    <a href="contact-us.html">For Query</a>
+                                    <a href="#appointment">Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Right Icons -->
+                <div class="nav-actions">
+                    <button class="nav-icon search-icon" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <a href="#appointment" class="nav-icon" aria-label="Appointments">
+                        <i class="bi bi-calendar-check"></i>
+                    </a>
+                    <a href="#contact" class="nav-icon" aria-label="Contact">
+                        <i class="bi bi-person"></i>
+                    </a>
+                    <a href="contact-us.html" class="book-now-btn">Book Now</a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search treatments, therapies, conditions..." class="search-input">
+                <button class="search-close" id="searchClose">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://api.whatsapp.com/send?phone=919999691356" class="fab whatsapp-fab"
+            aria-label="Chat on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="tel:9999691356" class="fab phone-fab" aria-label="Call Us">
+            <i class="bi bi-telephone-fill"></i>
+        </a>
+    </div>
+
+    <!-- Hero Banner Section -->
+    <section class="treatment-hero">
+        <div class="hero-bg">
+            <img src="../assets/images/section/disease-header.jpg" alt="Ayurveda Cooking">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="javascript:;">Ayurveda Diet</a></li>
+                        <li class="active">Ayurveda Cooking</li>
+                    </ol>
+                </nav>
+                <h1 class="treatment-title">Ayurveda Cooking</h1>
+                <p class="treatment-subtitle">Food as Medicine for Body, Mind & Soul</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="treatment-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Introduction -->
+                <div class="intro-section">
+                    <div class="intro-badge">
+                        <i class="bi bi-heart-pulse"></i>
+                        <span>Food as Medicine</span>
+                    </div>
+                    <p class="intro-text">
+                        Ayurvedic cooking is not just about preparing food, but about understanding the principles of
+                        Ayurveda and using food as medicine to promote health and balance. According to Ayurveda, food
+                        is one of the pillars of health, and the way we eat can have a profound impact on our physical,
+                        mental, and emotional well-being. The principles are based on the three doshas - Vata, Pitta,
+                        and Kapha - and the six tastes - sweet, sour, salty, bitter, pungent, and astringent.
+                    </p>
+                </div>
+
+                <!-- Key Principles -->
+                <div class="content-block">
+                    <div class="section-divider">
+                        <span class="divider-line"></span>
+                        <i class="bi bi-check-circle-fill" style="color: var(--primary-green);"></i>
+                        <span class="divider-line"></span>
+                    </div>
+                    <h2>Key Principles of Ayurvedic Cooking</h2>
+                    <p class="block-text text-center mb-5">
+                        Understanding these fundamental principles will help you prepare nourishing meals that promote
+                        balance.
+                    </p>
+
+                    <div class="allergy-grid">
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-basket3-fill"></i></span>
+                            <h4>Fresh, Whole Foods</h4>
+                            <p>Ayurveda emphasizes eating fresh, whole foods that are in season and locally sourced.
+                                Processed and refined foods are avoided as they lack prana (life force energy).</p>
+                        </div>
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-stars"></i></span>
+                            <h4>Spices & Herbs</h4>
+                            <p>Spices and herbs are essential in Ayurvedic cooking, adding flavor and medicinal
+                                properties.
+                                Turmeric, cumin, coriander, ginger, and fennel are commonly used.</p>
+                        </div>
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-heart-fill"></i></span>
+                            <h4>Mindful Cooking</h4>
+                            <p>Preparing food with love and positive energy enhances its healing properties.
+                                Cook with mindfulness and intention for optimal nourishment.</p>
+                        </div>
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-palette-fill"></i></span>
+                            <h4>Six Tastes Balance</h4>
+                            <p>Every meal should include all six tastes: sweet, sour, salty, bitter, pungent, and
+                                astringent to ensure all doshas are balanced.</p>
+                        </div>
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-calendar-check-fill"></i></span>
+                            <h4>Seasonal Eating</h4>
+                            <p>Eating according to the season helps maintain dosha balance. Choose warming foods in
+                                winter and cooling foods in summer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dosha-Specific Guidelines -->
+                <div class="content-block highlight-block">
+                    <div class="section-divider">
+                        <span class="divider-line"></span>
+                        <i class="bi bi-gear-fill" style="color: var(--gold-primary);"></i>
+                        <span class="divider-line"></span>
+                    </div>
+                    <h2>Cooking for Your Dosha</h2>
+                    <p class="block-text text-center mb-5">
+                        Ayurvedic cooking emphasizes eating according to one's constitution and the season.
+                    </p>
+
+                    <div class="approach-cards">
+                        <div class="approach-card">
+                            <div class="approach-icon" style="background: #e8f5e9; color: var(--primary-green);">
+                                <i class="bi bi-wind"></i>
+                            </div>
+                            <h3>Vata Constitution</h3>
+                            <p>Focus on warm, nourishing foods that are grounding and calming. Sweet, sour, and salty
+                                tastes are beneficial. Include ghee, warm soups, and cooked grains.</p>
+                        </div>
+                        <div class="approach-card">
+                            <div class="approach-icon" style="background: #fff3e0; color: #e65100;">
+                                <i class="bi bi-fire"></i>
+                            </div>
+                            <h3>Pitta Constitution</h3>
+                            <p>Focus on cooling, refreshing foods that are not too spicy or oily. Sweet, bitter, and
+                                astringent tastes are beneficial. Include cucumbers, coconut, and leafy greens.</p>
+                        </div>
+                        <div class="approach-card">
+                            <div class="approach-icon" style="background: #e3f2fd; color: #1565c0;">
+                                <i class="bi bi-water"></i>
+                            </div>
+                            <h3>Kapha Constitution</h3>
+                            <p>Focus on light, dry, and warm foods that are stimulating and energizing. Pungent, bitter,
+                                and astringent tastes are beneficial. Include ginger, black pepper, and legumes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefits -->
+                <div class="content-block">
+                    <div class="section-divider">
+                        <span class="divider-line"></span>
+                        <i class="bi bi-star-fill" style="color: var(--gold-primary);"></i>
+                        <span class="divider-line"></span>
+                    </div>
+                    <h2>Benefits of Ayurvedic Cooking</h2>
+                    <p class="block-text text-center mb-5">
+                        Following Ayurvedic cooking principles can transform your health and well-being.
+                    </p>
+
+                    <div class="allergy-grid">
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-activity"></i></span>
+                            <h4>Improved Digestion</h4>
+                            <p>Proper food combinations and cooking methods enhance digestive fire (Agni), leading
+                                to better nutrient absorption and elimination.</p>
+                        </div>
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-lightning-charge-fill"></i></span>
+                            <h4>Increased Energy</h4>
+                            <p>Eating according to your dosha provides sustained energy throughout the day without
+                                the crashes associated with processed foods.</p>
+                        </div>
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-emoji-smile-fill"></i></span>
+                            <h4>Mental Clarity</h4>
+                            <p>Sattvic (pure) foods promote mental clarity, focus, and emotional balance, reducing
+                                brain fog and mood swings.</p>
+                        </div>
+                        <div class="allergy-card">
+                            <span class="allergy-number"><i class="bi bi-shield-check"></i></span>
+                            <h4>Disease Prevention</h4>
+                            <p>Balanced eating according to Ayurvedic principles helps prevent disease by maintaining
+                                dosha equilibrium and strengthening immunity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conclusion -->
+                <div class="content-block">
+                    <div class="cta-block"
+                        style="background: linear-gradient(135deg, var(--primary-light), var(--primary-green));">
+                        <div class="cta-content">
+                            <h2 style="color: var(--gold-primary);">Start Your Ayurvedic Journey</h2>
+                            <p style="color: white;">In addition to promoting physical health, Ayurvedic cooking has a
+                                positive impact on mental and emotional well-being. By eating foods that are balanced
+                                and
+                                nourishing, you can improve digestion, boost energy levels, and enhance your overall
+                                sense
+                                of well-being. Consult with our Ayurvedic practitioners for personalized dietary
+                                guidance.</p>
+                            <div class="cta-buttons">
+                                <a href="contact-us.html" class="btn btn-primary"
+                                    style="background: var(--gold-primary); color: var(--primary-dark);">Book
+                                    Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Patient Stories</span>
+                <h2 class="section-title">What Our Patients Have to Say</h2>
+            </div>
+
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Priya+Bhardwaj&size=200&background=1a4d2e&color=f2c464&bold=true"
+                                alt="Priya Bhardwaj">
+                            <h4>Priya Bhardwaj</h4>
+                            <span class="location">Gurgaon</span>
+                        </div>
+                        <div class="testimonial-text-content">
+                            <p class="testimonial-text">The holistic approach at this clinic is amazing! I feel more
+                                connected with my body and mind than ever before. The doctors are knowledgeable and
+                                truly care about your health.</p>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Suresh+Mittal&size=200&background=2d6a4f&color=ffffff&bold=true"
+                                alt="Suresh Mittal">
+                            <h4>Suresh Mittal</h4>
+                            <span class="location">Faridabad</span>
+                        </div>
+                        <div class="testimonial-text-content">
+                            <p class="testimonial-text">I came in with severe stress and digestive issues, and after a
+                                few sessions, I feel a world of difference. The treatments are gentle yet effective, and
+                                the staff is always supportive.</p>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Jyotsana+Suri&size=200&background=d4af37&color=0f2818&bold=true"
+                                alt="Jyotsana Suri">
+                            <h4>Jyotsana Suri</h4>
+                            <span class="location">Delhi</span>
+                        </div>
+                        <div class="testimonial-text-content">
+                            <p class="testimonial-text">I've never felt better! The personalized Ayurvedic treatments
+                                helped me regain balance and energy. The doctors truly listen to your needs and guide
+                                you every step of the way.</p>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Rajesh+M&size=200&background=1a4d2e&color=f2c464&bold=true"
+                                alt="Rajesh M.">
+                            <h4>Rajesh M.</h4>
+                            <span class="location">Noida</span>
+                        </div>
+                        <div class="testimonial-text-content">
+                            <p class="testimonial-text">I've been struggling with chronic pain for years, and Ayurveda
+                                has been the key to my healing. The entire team made me feel cared for, and my progress
+                                has been remarkable.</p>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button class="testimonial-nav prev" id="testimonialPrev"><i class="bi bi-chevron-left"></i></button>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-nav next" id="testimonialNext"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Aaryuvedam</h3>
+                    <p>Welcome to Aaryuvedam, where we are committed to providing world-class Panchakarma treatments and
+                        care to our patients. Our mission is to preserve the ancient art and science of Ayurveda and to
+                        integrate it with modern medicine.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="agnikarma-vidd-karma.html"><i class="bi bi-plus"></i> Agnikarma and Viddh Karma</a>
+                        </li>
+                        <li><a href="cupping-therapy.html"><i class="bi bi-plus"></i> Cupping Therapy</a></li>
+                        <li><a href="leech-therapy.html"><i class="bi bi-plus"></i> Leech Therapy</a></li>
+                        <li><a href="panchakarma.html"><i class="bi bi-plus"></i> Panchakarma</a></li>
+                        <li><a href="naadi-pariksha.html"><i class="bi bi-plus"></i> Naadi Pariksha</a></li>
+                        <li><a href="kshar-sutra.html"><i class="bi bi-plus"></i> Kshar Sutra</a></li>
+                        <li><a href="swarn-prashan-sanskaar.html"><i class="bi bi-plus"></i> Swarn Prashan Sanskaar</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="bi bi-plus"></i> About Us</a></li>
+                        <li><a href="Our-Doctors.html"><i class="bi bi-plus"></i> Our Doctors</a></li>
+                        <li><a href="health-insurance.html"><i class="bi bi-plus"></i> Health Insurance</a></li>
+                        <li><a href="medical-tourism-india.html"><i class="bi bi-plus"></i> Medical Tourism In India</a>
+                        </li>
+                        <li><a href="gallery.html"><i class="bi bi-plus"></i> Gallery</a></li>
+                        <li><a href="../blog"><i class="bi bi-plus"></i> Blog</a></li>
+                        <li><a href="testimonial.html"><i class="bi bi-plus"></i> Testimonials</a></li>
+                        <li><a href="contact-us.html"><i class="bi bi-plus"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Get in Touch</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Aaryuvedam" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/@AaryuvedamHospital" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/aaryuvedam/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com/aaryuvedam" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.linkedin.com/in/dr-chetan-sharma-73770943/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                    <img src="../assets/brand.png" class="footer-logo" alt="Aaryuvedam"
+                        style="margin-top: 2rem; max-width: 180px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>© 2025 Copyright Aaryuvedam, All Rights Reserved. | Designed by <a
+                            href="https://www.prfbl.com">PRFBL</a></p>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="Our-Doctors.html">Doctors</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="scrollup" id="scrollUp">
+            <i class="bi bi-arrow-bar-up"></i>
+        </a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Testimonial Slider
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dotsContainer = document.getElementById('testimonialDots');
+            const prevBtn = document.getElementById('testimonialPrev');
+            const nextBtn = document.getElementById('testimonialNext');
+            let currentSlide = 0;
+
+            // Create dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.classList.add('testimonial-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = document.querySelectorAll('.testimonial-dot');
+
+            function goToSlide(index) {
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                currentSlide = index;
+                if (currentSlide >= slides.length) currentSlide = 0;
+                if (currentSlide < 0) currentSlide = slides.length - 1;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+
+            prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+            nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+            // Auto-advance
+            setInterval(() => goToSlide(currentSlide + 1), 5000);
+
+            // Scroll to top
+            const scrollUp = document.getElementById('scrollUp');
+            scrollUp.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>
