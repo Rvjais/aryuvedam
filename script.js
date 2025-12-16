@@ -797,15 +797,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const healingPopupForm = document.getElementById('healingPopupForm');
 
     // Show popup after 5 seconds
-    console.log('🌿 Popup code reached! healingPopupOverlay:', healingPopupOverlay);
     if (healingPopupOverlay) {
-        console.log('🌿 Setting up popup timer for 5 seconds...');
         setTimeout(() => {
-            console.log('🌿 Timer fired! Opening popup now...');
             openHealingPopup();
         }, 5000); // 5 seconds delay
-    } else {
-        console.log('🌿 ERROR: healingPopupOverlay element not found!');
     }
 
     function openHealingPopup() {
