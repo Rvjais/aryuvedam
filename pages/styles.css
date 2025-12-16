@@ -1006,6 +1006,21 @@ button {
     width: 85%;
     max-width: 280px;
   }
+
+  /* Top banner adjustments for very small screens */
+  .top-banner {
+    padding: 0.35rem 0;
+  }
+
+  .banner-text {
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
 }
 
 /* ==========================================
